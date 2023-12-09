@@ -30,3 +30,7 @@ a {
     font-size: 36px;
     line-height: 80px;
 }
+
+img {
+    border-radius: 10px;
+}
