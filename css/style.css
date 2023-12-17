@@ -1,10 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
 }
 
 .main-header {
-    margin-top: 40PX;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -13,9 +16,7 @@
     color: #000;
     font-family: Gilroy-Medium;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .main-header-nav-item:hover {
@@ -26,9 +27,12 @@ ul a {
     text-decoration: none;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 .orange {
     color: #F25822;
-    align-items: center;
 }
 
 .main-content {
@@ -41,9 +45,7 @@ ul a {
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
     margin-bottom: 17px;
 }
 
@@ -51,14 +53,40 @@ ul a {
     color: #888;
     font-family: Gilroy-Medium;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     width: 466px;
     margin-bottom: 37px;
+}
+
+.main-header-button {
+    border-radius: 30px;
+    background: #F25822;
+    border: none;
+
+    color: #FFF;
+    font-family: Gilroy-SemiBold;
+    font-size: 12px;
+    padding: 13px 27px;
 }
 
 .logo-content {
     margin-top: 96px;
     margin-bottom: 96px;
+}
+
+.push {
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    border: none;
+
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    padding: 16px 36px;
+}
+
+.video {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
 }
