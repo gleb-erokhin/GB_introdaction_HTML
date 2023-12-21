@@ -1,9 +1,8 @@
-/* @import url('https://fonts.cdnfonts.com/css/gilroy-bold'); */
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -12,9 +11,21 @@ body {
     font-weight: 400;
 }
 
+.center {
+    padding-left: calc(50% - 1174px / 2);
+    padding-right: calc(50% - 1174px / 2);
+}
+
 .main-header {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.main-header-logo {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .main-header-nav {
@@ -23,13 +34,14 @@ body {
     font-family: Gilroy-Medium;
     font-size: 14px;
     font-weight: 400;
+    display: flex;
 }
 
 .header-link {
     text-decoration: none;
 }
 
-.main-header-nav-item:hover {
+.main-header-nav:hover {
     color: #F25822;
 }
 
@@ -43,16 +55,11 @@ body {
 }
 
 .main-content-head {
-    width: 522px;
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 17px;
-}
-
-.main-header-text {
-    font-size: 24px;
 }
 
 .main-content-paragraf {
@@ -74,17 +81,13 @@ body {
     padding: 13px 27px;
 }
 
-.logo-content {
-    margin-top: 96px;
-    margin-bottom: 96px;
-}
 
 .push {
     border-radius: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     border: none;
-
+    
     color: #FFF;
     font-family: Gilroy-Bold;
     font-size: 15px;
@@ -95,4 +98,9 @@ body {
     color: #AAA;
     font-family: Gilroy-Bold;
     font-size: 15px;
+}
+
+.logo-content {
+    margin-top: 96px;
+    margin-bottom: 96px;
 }

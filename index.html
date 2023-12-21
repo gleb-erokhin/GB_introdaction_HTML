@@ -6,32 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
         <link rel="stylesheet" href="./css/style.css">
-        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+        <!-- <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"> -->
     </head>
 
     <body>
 
-        <header class="main-header">
+        <header class="main-header center">
+
             <div class="main-header-logo">
                 <img src="./img/logo.png" alt="Логотип компании">
-                <p class="main-header-text main-content-head">
+                <p class="main-header-text">
                     Grow<span class="orange">Be</span>
                 </p>
             </div>
-
-            <ul class="main-header-nav">
-                <li class="main-header-link"><a href="#" class="header-link">Home</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">About Us</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">Services</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">Features</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">Team</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">Blog</a></li>
-                <li class="main-header-link"><a href="#" class="header-link">Contact</a></li>
-            </ul>
-            <button class="main-header-button">Get Started</button>
+            <div class="main-header-menu">
+                <ul class="main-header-nav">
+                    <li class="main-header-link"><a href="#" class="header-link">Home</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">About Us</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">Services</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">Features</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">Team</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">Blog</a></li>
+                    <li class="main-header-link"><a href="#" class="header-link">Contact</a></li>
+                </ul>
+                <button class="main-header-button">Get Started</button>
+            </div>
         </header>
 
-        <section class="main-content">
+        <section class="main-content center">
 
             <div class="main-content-text">
                 <h1 class="main-content-head">
@@ -45,10 +47,8 @@
                 </p>
                 <div class="main-content-buttons">
                     <button class="push">Start Now</button>
-                    <div class="main-content-btn">
-                        <img src="./img/icon.png" alt="" width="30px" height="30px">
-                        <p class="video">Watch Video</p>
-                    </div>
+                    <img src="./img/icon.png" alt="">
+                    <a class="video header-link"  href="#">Watch Video</a>
                 </div>
 
                 <img src="./img/main-photo.png" alt="Основное фото, иговое поле">
