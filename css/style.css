@@ -25,16 +25,12 @@ body {
     font-weight: 400;
 }
 
-.main-header-nav-item:hover {
-    color: #F25822;
-}
-
-ul a {
+.header-link {
     text-decoration: none;
 }
 
-ul li {
-    list-style-type: none;
+.main-header-nav-item:hover {
+    color: #F25822;
 }
 
 .orange {
@@ -42,8 +38,8 @@ ul li {
 }
 
 .main-content {
-    padding-top: 103px;
-    padding-bottom: 104px;
+    padding-top: 44px;
+    padding-bottom: 100px;
 }
 
 .main-content-head {
