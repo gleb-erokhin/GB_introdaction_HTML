@@ -1,4 +1,25 @@
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+/* @import url('https://fonts.cdnfonts.com/css/gilroy-bold'); */
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../fonts/GilroyBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../fonts/GilroyMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("../fonts/GilroySemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 * {
     margin: 0;
