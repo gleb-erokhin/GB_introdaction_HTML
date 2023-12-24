@@ -248,3 +248,43 @@ body {
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
     padding: 40px 34px;
 }
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fafafa;
+    gap: 48px;
+}
+
+.services-content-head {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 57.6px */
+}
+
+.services-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.services-items {
+    display: flex;
+    gap: 20px;
+}
+
+.services-head {
+    padding-top: 32px;
+}
+
+.services-paragraf {
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
