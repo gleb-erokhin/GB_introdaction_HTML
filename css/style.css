@@ -1,5 +1,7 @@
 /* @import url('https://fonts.cdnfonts.com/css/gilroy-bold'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap');
+
 @font-face {
     font-family: "Gilroy-Bold";
     src: url("../fonts/GilroyBold.ttf") format("truetype");
@@ -107,24 +109,11 @@ body {
     gap: 73px;
 }
 
-.solution-content-block {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
 .main-content-head {
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 60px;
     font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.solution-content-head {
-    color: #000;
-    font-family: Gilroy-Bold;
-    font-size: 45px;
     margin-bottom: 20px;
 }
 
@@ -134,16 +123,6 @@ body {
     font-size: 20px;
     width: 466px;
     margin-bottom: 32px;
-}
-
-.solution-content-paragraf {
-    color: #888;
-    font-family: Inter;
-    font-size: 16px;
-    line-height: 140%;
-    /* 22.4px */
-    /* 24px */
-    margin-bottom: 35px;
 }
 
 .main-header-button {
@@ -161,7 +140,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 
 .push {
     border-radius: 50px;
@@ -188,4 +166,63 @@ body {
     margin-bottom: 100px;
     display: flex;
     gap: 48px;
+}
+
+.solution-content-block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.solution-content-head {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.solution-content-paragraf {
+    color: #888;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    /* 22.4px */
+    /* 24px */
+    margin-bottom: 35px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.features-block-head {
+    margin-top: 25px;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.features-block-paragraf {
+    margin-top: 18px;
+    margin-bottom: 25px;
+
+    color: #666;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.features-block-more {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    /* 21px */
 }
