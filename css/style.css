@@ -218,6 +218,22 @@ body {
     line-height: 150%;
 }
 
+.features-block {
+    padding: 40px 34px;
+}
+
+.features-block-left {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+}
+
+.features-block-right {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 25px;
+}
+
 .features-block-more {
     color: #000;
     font-family: Inter;
@@ -225,4 +241,10 @@ body {
     font-weight: 600;
     line-height: 150%;
     /* 21px */
+}
+
+.shadow {
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    padding: 40px 34px;
 }
