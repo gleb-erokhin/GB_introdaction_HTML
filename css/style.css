@@ -1,6 +1,6 @@
 /* @import url('https://fonts.cdnfonts.com/css/gilroy-bold'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;700&display=swap'); */
 
 @font-face {
     font-family: "Gilroy-Bold";
@@ -189,10 +189,10 @@ body {
 }
 
 .solution-content-paragraf {
-    color: #888;
-    font-family: Inter;
+    color: #666;
+    font-family: Gilroy-Regular;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 150%;
     /* 22.4px */
     /* 24px */
     margin-bottom: 35px;
@@ -219,8 +219,8 @@ body {
     margin-bottom: 25px;
 
     color: #666;
-    font-family: Inter;
-    font-size: 14px;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
     font-weight: 400;
     line-height: 150%;
 }
@@ -254,7 +254,6 @@ body {
 .shadow {
     background: #FFF;
     box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
-    padding: 40px 34px;
 }
 
 .services {
@@ -285,13 +284,13 @@ body {
 }
 
 .services-content-paragraf {
-    color: #888;
+    color: #666;
     text-align: center;
-    font-family: Inter;
+    font-family: Gilroy-Regular;
     font-size: 16px;
-    line-height: 140%;
+    line-height: 150%;
     /* 22.4px */
-    width: 740px;
+    max-width: 740px;
 }
 
 .services-items {
@@ -299,15 +298,40 @@ body {
     gap: 20px;
 }
 
+.services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: #fff;
+}
+
+.services-item-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 34px 34px 34px;
+}
+
 .services-head {
-    padding-top: 32px;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 16px;
 }
 
 .services-paragraf {
-    padding-top: 16px;
     padding-bottom: 24px;
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    line-height: 150%;
+    /* 24px */
 }
 
-.sr {
-    justify-content: center;
+.services-btn {
+    padding: 16px 32px;
 }
