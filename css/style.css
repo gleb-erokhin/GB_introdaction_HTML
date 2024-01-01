@@ -37,6 +37,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "inter";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -271,8 +278,19 @@ body {
 .services-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
     gap: 24px;
+    align-items: center;
+}
+
+.services-content-paragraf {
+    color: #888;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 140%;
+    /* 22.4px */
+    width: 740px;
 }
 
 .services-items {
