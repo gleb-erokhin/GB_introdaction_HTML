@@ -177,7 +177,7 @@ body {
 
 .solution-content-block {
     display: flex;
-    gap: 20px;
+    gap: 70px;
     align-items: center;
 }
 
@@ -248,6 +248,7 @@ body {
     font-weight: 600;
     line-height: 150%;
     /* 21px */
+    text-decoration: none;
 }
 
 .shadow {
@@ -305,4 +306,8 @@ body {
 .services-paragraf {
     padding-top: 16px;
     padding-bottom: 24px;
+}
+
+.sr {
+    justify-content: center;
 }
