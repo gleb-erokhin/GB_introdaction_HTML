@@ -42,9 +42,13 @@ body {
     margin-bottom: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 43px;
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
+}
+
+.hero-img-logo {
+    width: 50%;
 }
 
 .hero-text {
