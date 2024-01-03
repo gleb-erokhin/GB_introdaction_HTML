@@ -3,16 +3,23 @@
     margin: 0;
 }
 
+body {
+    font-style: normal;
+    line-height: normal;
+}
+
+/* Общее центрирование */
 .center {
     padding-left: calc(50% - 1140px / 2);
     padding-right: calc(50% - 1140px / 2);
 }
 
+/* шапка сайта */
 .main-header {
     background-color: #222;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 75px;
 }
 
@@ -22,16 +29,40 @@
     align-items: center;
 }
 
-.user-button {
+.user-buttons {
     display: flex;
     gap: 31px;
 }
 
+/* Главный блок */
 .hero {
     background-color: #F1E4E6;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-text {
-    background-color: beige;
+    border-left: 1px solid #F16D7F;
+    border-left-width: 12px;
+    padding-left: 16px;
+}
+
+.hero-text-head {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-text-midle {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-text-red {
+    color: #F16D7F;
 }
