@@ -43,6 +43,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: calc(50% - 1600px / 2);
+    padding-right: calc(50% - 1600px / 2);
 }
 
 .hero-text {
