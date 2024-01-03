@@ -27,12 +27,13 @@ body {
 .logo {
     display: flex;
     gap: 41px;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .user-buttons {
     display: flex;
     gap: 31px;
+    align-items: flex-end;
 }
 
 /* Главный блок */
