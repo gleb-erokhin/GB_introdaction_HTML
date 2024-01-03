@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* формирование блоков для визуала */
+.main-header {
+    background-color: #222;
+}
+
+.hero {
+    background-color: #F1E4E6;
+    margin-bottom: 60px;
+}
+
+.hero-text {
+    background-color: beige;
+}
+
