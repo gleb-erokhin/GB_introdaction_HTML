@@ -3,9 +3,28 @@
     margin: 0;
 }
 
-/* формирование блоков для визуала */
+.center {
+    padding-left: calc(50% - 1140px / 2);
+    padding-right: calc(50% - 1140px / 2);
+}
+
 .main-header {
     background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 75px;
+}
+
+.logo {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
+.user-button {
+    display: flex;
+    gap: 31px;
 }
 
 .hero {
@@ -16,4 +35,3 @@
 .hero-text {
     background-color: beige;
 }
-
