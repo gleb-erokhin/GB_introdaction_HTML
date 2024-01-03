@@ -6,6 +6,7 @@
 body {
     font-style: normal;
     line-height: normal;
+    font-weight: 400;
 }
 
 /* Общее центрирование */
@@ -65,4 +66,112 @@ body {
 
 .hero-text-red {
     color: #F16D7F;
+}
+
+/* Блок предложения и скидки */
+
+.proposals {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 48px;
+}
+
+.proposal-item-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.proposal-item-red {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Блок продукты */
+.products {
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.products-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.products-title-head {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+}
+
+.products-title-text {
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+}
+
+.products-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.products-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-item-block {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 16px;
+    background-color: #F8F8F8;
+}
+
+.products-item-head {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+}
+
+.products-item-paragraf {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.products-item-price {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+}
+
+.products-button {
+    display: flex;
+    justify-content: center;
+}
+
+.products-button-style {
+    /* width: 212px;
+    height: 48px; */
+    border: 1px solid #FF6A6A;
+    background: #FFF;
+
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    padding: 15px 39px;
+    margin-bottom: 60px;
 }
