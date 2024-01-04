@@ -203,3 +203,11 @@ body {
     padding: 15px 39px;
     margin-bottom: 60px;
 }
+
+
+@media (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 734px/2);
+        padding-right: calc(50% - 734px/2);
+    }
+}
