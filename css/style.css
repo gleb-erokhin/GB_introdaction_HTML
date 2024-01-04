@@ -48,13 +48,15 @@ body {
 }
 
 .hero-img-logo {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .hero-text {
+    display: inline-block;
     border-left: 1px solid #F16D7F;
     border-left-width: 12px;
     padding-left: 16px;
+    margin-bottom: 90px;
 }
 
 .hero-text-head {
