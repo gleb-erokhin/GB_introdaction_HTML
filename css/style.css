@@ -85,6 +85,22 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 260px 180px;
     margin-bottom: 48px;
+    align-items: center;
+}
+
+.proposals-item {
+    background: rgba(33, 22, 22, 0.70);;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.proposals-item-img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .proposals-item-big {
@@ -92,6 +108,8 @@ body {
 }
 
 .proposal-item-text {
+    /* ставим абсолют туда куда хотим повесить картину */
+    position: absolute;
     color: #FFF;
     text-align: center;
     font-family: Lato;
