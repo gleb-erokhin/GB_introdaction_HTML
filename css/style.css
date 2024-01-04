@@ -38,25 +38,25 @@ body {
 
 /* Главный блок */
 .hero {
-    background-color: #F1E4E6;
     margin-bottom: 60px;
     display: flex;
-    align-items: center;
-    gap: 43px;
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
+    background: #F1E4E6;
 }
 
-.hero-img-logo {
+.hero-img {
     width: 50%;
 }
 
+.hero-content {
+    padding-left: 64px;
+}
+
 .hero-text {
-    display: inline-block;
-    border-left: 1px solid #F16D7F;
-    border-left-width: 12px;
+    border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    margin-bottom: 90px;
+    margin-top: 48%;
 }
 
 .hero-text-head {
@@ -83,7 +83,6 @@ body {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 260px 180px;
     margin-bottom: 48px;
     align-items: center;
 }
@@ -105,6 +104,7 @@ body {
 
 .proposals-item-big {
     grid-column: 1/4;
+    min-height: 180px;
 }
 
 .proposal-item-text {
