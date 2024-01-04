@@ -48,7 +48,7 @@ body {
 }
 
 .hero-img-logo {
-    /* width: 50%; */
+    width: 50%;
 }
 
 .hero-text {
@@ -104,7 +104,7 @@ body {
 }
 
 .proposals-item-big {
-    grid-column: 1/span3;
+    grid-column: 1/4;
 }
 
 .proposal-item-text {
@@ -154,7 +154,7 @@ body {
 
 .products-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 360px);
     gap: 24px;
 }
 
@@ -200,6 +200,7 @@ body {
     height: 48px; */
     border: 1px solid #FF6A6A;
     background: #FFF;
+    display: block;
 
     color: #F26376;
     font-family: Lato;
