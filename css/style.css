@@ -99,7 +99,7 @@ body {
 
 .proposals-item-big {
     grid-column: 1/4;
-    min-height: 180px;
+    min-height: 116px;
 }
 
 .proposal-item-text {
@@ -207,7 +207,15 @@ body {
 
 @media (max-width:1024px) {
     .center {
-        padding-left: calc(50% - 734px/2);
-        padding-right: calc(50% - 734px/2);
+        padding-left: calc(50% - 570px/2);
+        padding-right: calc(50% - 570px/2);
+    }
+
+    .hero-text-head {
+        font-size: 44px;
+    }
+
+    .hero-text-midle {
+        font-size: 24px;
     }
 }
