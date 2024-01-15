@@ -219,7 +219,11 @@ body {
 
 @media (max-width:1024px) {
     .logo {
-        padding-left: 15px;
+        padding-left: 32px;
+    }
+
+    .user-buttons {
+        padding-right: 32px;
     }
 }
 
@@ -245,7 +249,7 @@ body {
     .hero-text {
         margin-top: 139px;
     }
-    
+
     .hero-text-head {
         font-size: 44px;
     }
