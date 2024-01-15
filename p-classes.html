@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .menu__link:hover {
+            color: red;
+        }
+
+        .menu__link:active {
+            color: green;
+        }
+
+        .menu__list:first-child {
+            text-decoration: underline;
+        }
+
+        .menu__list:last-child {
+            font-weight: bold;
+        }
+
+        .menu__list:nth-child(3) {
+            background-color: orange;
+            display: inline-block;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu__list">
+            <a href="#" class="menu__link">list-1</a>
+        </li>
+        <li class="menu__list"><a href="#" class="menu__link">list-2</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">list-3</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">list-4</a></li>
+        <li class="menu__list"><a href="#" class="menu__link11">list-4</a></li>
+      </ul>
+      
+    
+      <!-- 
+        1. При наведении на любую ссылку цвет текста должен стать красным
+        2. При нажатии на ссылку цвет текста должен стать зеленым в момент нажатия
+        3. Найти первый элемент списка и добавить нижнее подчеркивание ссылке
+        4. Найти последний элемент списка и добавить ссылке жирность font-weight: bold
+        5. У третьей ссылки нужно поменять цвет фона на оранжевый -->
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  text-decoration:none;
+    
+}
+.card{
+  width:360px;
+  display:flex;
+  flex-direction:column;
+  border:5px solid black;
+  margin:50px auto;
+
+}
+
+.card_interact{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+/*   background-color: rgb(123, 125, 26, 0.0); */
+  
+ }
+
+
+.card__img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position: relative;
+  z-index:-1; 
+}
+
+.card_interact:hover {
+  background-color: rgb(123, 125, 26, 0.5);
+}
+
+.card__button{
+  display:inline-block;
+  position:absolute;
+  padding: 15px 30px;
+  background-color: yellow;
+  color: black;
+  border:1px solid black;
+  font-weight:bolder;
+  font-family:sans-serif;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.card:hover .card__button {
+  display: initial;
+}
+
+.card__button:hover {
+  transform: scale(1.1);
+}
+
+
+.card_info{
+  padding:30px;
+  text-align:center;
+}
+
+.card__heading{
+  font-family:monospace;
+  font-size: 24px;
+  margin-bottom:12px;
+}
+
+.card__text{
+  font-family:sans-serif;
+  font-style:italic;
+  color: gray;
+}
+    </style>
+</head>
+<body>
+    <!-- /* Есть карточка, на изображение которой наложен цвет и кнопка.
+Сделайте цвет прозрачным, чтобы было видно изображение
+Сделайте цвет и кнопку появляющимися только при наведении курсора на card */ -->
+
+    <div class="card">
+        <div class="card_interact">
+          <img class="card__img" src="https://avatars.mds.yandex.net/get-mpic/5255974/img_id6638732431874579527.jpeg/orig" alt="Superior Spider-Man Volume 6. Goblin Nation (cover)">
+          <a class="card__button" href="#">Читать онлайн</a>
+          
+        </div>
+        <d class="card_info">
+          <h4 class="card__heading">Superior Spider-man</h4>
+          <p class="card__text">Volume 6. Goblin Nation</p>
+        </div>
+    </div>
+</body>
+</html>
