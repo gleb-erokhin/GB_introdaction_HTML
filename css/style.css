@@ -40,19 +40,24 @@ body {
 .hero {
     margin-bottom: 60px;
     display: flex;
+    gap: 64px;
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
     background: #F1E4E6;
 }
 
 .hero-content {
-    padding-left: 64px;
+    /* padding-left: 64px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 96px;
 }
 
 .hero-text {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    margin-top: 48%;
+    /* margin-top: 48%; */
 }
 
 .hero-text-head {
@@ -84,7 +89,8 @@ body {
 }
 
 .proposals-item {
-    background: rgba(33, 22, 22, 0.70);;
+    background: rgba(33, 22, 22, 0.70);
+    ;
     position: relative;
     display: flex;
     justify-content: center;
@@ -203,3 +209,16 @@ body {
     padding: 15px 39px;
     margin-bottom: 60px;
 }
+/* 
+@media (max-width: 768px) {
+    .center {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+
+    .hero-img {
+        width: 50%
+    }
+
+
+} */
