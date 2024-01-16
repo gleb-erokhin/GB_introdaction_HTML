@@ -9,6 +9,10 @@ body {
     font-weight: 400;
 }
 
+.none {
+    display: none;
+}
+
 /* Общее центрирование */
 .center {
     padding-left: calc(50% - 1140px / 2);
