@@ -52,10 +52,6 @@ body {
     background: #F1E4E6;
 }
 
-/* .hero-img {
-    width: 50%;
-} */
-
 .main-img {
     width: 50%;
 }
@@ -64,7 +60,6 @@ body {
     display: inline-block;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    /* margin-top: 48%; */
     margin-bottom: 96px;
 }
 
@@ -87,18 +82,17 @@ body {
 }
 
 /* Блок предложения и скидки */
-
 .proposals {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 260px 180px;
     margin-bottom: 48px;
     align-items: center;
 }
 
 .proposals-item {
     background: rgba(33, 22, 22, 0.70);
-    ;
     position: relative;
     display: flex;
     justify-content: center;
@@ -218,34 +212,29 @@ body {
     margin-bottom: 60px;
 }
 
-@media (max-width:1024px) {
-    .logo {
-        padding-left: 32px;
-    }
-
-    .user-buttons {
-        padding-right: 32px;
-    }
-}
 
 
 @media (max-width:768px) {
-    .logo {
+    /* .logo {
         padding-left: 32px;
     }
 
     .user-buttons {
         padding-right: 32px;
-    }
+    } */
 
     .center {
-        padding-left: calc(50% - 734px/2);
-        padding-right: calc(50% - 734px/2);
+        padding-left: calc(50% - 734px / 2);
+        padding-right: calc(50% - 734px / 2);
     }
 
-    .hero-content {
-        padding-left: 39px;
+    .hero {
+        gap: 39px;
     }
+
+    /* .hero-content {
+        padding-left: 39px;
+    } */
 
     .hero-text-head {
         font-size: 44px;
@@ -255,7 +244,7 @@ body {
         font-size: 24px;
     }
 
-    .proposals {
+    /* .proposals {
         width: 100%;
     }
 
@@ -267,5 +256,5 @@ body {
 
     .products-items {
         grid-template-columns: repeat(2, 360px);
-    }
+    } */
 }
