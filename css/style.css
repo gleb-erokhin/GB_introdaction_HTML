@@ -45,27 +45,27 @@ body {
 .hero {
     margin-bottom: 60px;
     display: flex;
+    gap: 43px;
+    align-items: center;
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
     background: #F1E4E6;
 }
 
-.hero-img {
+/* .hero-img {
+    width: 50%;
+} */
+
+.main-img {
     width: 50%;
 }
 
-.main-img {
-    width: 100%;
-}
-
-.hero-content {
-    padding-left: 64px;
-}
-
 .hero-text {
+    display: inline-block;
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
-    margin-top: 48%;
+    /* margin-top: 48%; */
+    margin-bottom: 96px;
 }
 
 .hero-text-head {
@@ -245,10 +245,6 @@ body {
 
     .hero-content {
         padding-left: 39px;
-    }
-
-    .hero-text {
-        margin-top: 139px;
     }
 
     .hero-text-head {
