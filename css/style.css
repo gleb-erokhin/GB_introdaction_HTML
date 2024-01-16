@@ -3,17 +3,20 @@
     margin: 0;
 }
 
+
 body {
     font-style: normal;
     line-height: normal;
     font-weight: 400;
 }
 
+
 /* Общее центрирование */
 .center {
     padding-left: calc(50% - 1140px / 2);
     padding-right: calc(50% - 1140px / 2);
 }
+
 
 /* шапка сайта */
 .main-header {
@@ -98,11 +101,11 @@ body {
 .proposals-item-img {
     position: relative;
     z-index: -1;
+    width: 100%;
 }
 
 .proposals-item-big {
     grid-column: 1/4;
-    min-height: 180px;
 }
 
 .proposal-item-text {
@@ -207,7 +210,72 @@ body {
     margin-bottom: 60px;
 }
 
-/* для отключения блоков и удобство настройки */
 .none {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+    .user-buttons {
+        padding-right: 20px;
+    }
+
+    .center {
+        padding-left: calc(50% - 1024px / 2);
+        padding-right: calc(50% - 1024px / 2);
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-text-head {
+        font-size: 44px;
+    }
+    
+    .hero-text-midle {
+        font-size: 24px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+
+    .hero {
+        gap: 39px;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-text-head {
+        font-size: 44px;
+    }
+    
+    .hero-text-midle {
+        font-size: 24px;
+    }
+
+    .proposals {
+        gap: 19px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+
 }
