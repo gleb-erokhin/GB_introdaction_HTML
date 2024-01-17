@@ -309,7 +309,10 @@ body {
     }
 
     .proposals {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+        align-items: center;
     }
 
     .products-items {
