@@ -1,0 +1,124 @@
+
+@media (max-width: 1024px) {
+    .logo {
+        padding-left: 20px;
+    }
+
+    .user-buttons {
+        padding-right: 20px;
+    }
+
+    .center {
+        /* для того чтобы блок proposal имел такие же отступы в 16px как  на разрешении 768 */
+        padding-left: calc(50% - 992px / 2);
+        padding-right: calc(50% - 992px / 2);
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-text-head {
+        font-size: 44px;
+    }
+    
+    .hero-text-midle {
+        font-size: 24px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+    }
+
+    .hero {
+        gap: 39px;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-text-head {
+        font-size: 44px;
+    }
+    
+    .hero-text-midle {
+        font-size: 24px;
+    }
+
+    .proposals {
+        gap: 19px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .center {
+        padding-left: calc(50% - 343px / 2);
+        padding-right: calc(50% - 343px / 2);
+    }
+
+    .hero {
+        height: 100vh;
+        padding-left: 56px;
+    }
+
+    .svg {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text-head {
+        font-size: 38px;
+    }
+    
+    .hero-text-midle {
+        font-size: 20px;
+    }
+
+    .proposals {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .products {
+        padding-top: 32px;
+        gap: 0;
+    }
+
+    .products-title {
+        gap: 3px;
+        padding-bottom: 64px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(1, 328px);
+        gap: 16px;
+    }
+
+    .products-button {
+        padding-top: 40px;
+    }
+
+    /* следующий блок черный отступ top должен быть 36 */
+}
