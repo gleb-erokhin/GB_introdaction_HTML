@@ -224,8 +224,9 @@ body {
     }
 
     .center {
-        padding-left: calc(50% - 1024px / 2);
-        padding-right: calc(50% - 1024px / 2);
+        /* для того чтобы блок proposal имел такие же отступы в 16px как  на разрешении 768 */
+        padding-left: calc(50% - 992px / 2);
+        padding-right: calc(50% - 992px / 2);
     }
 
     .hero-img {
