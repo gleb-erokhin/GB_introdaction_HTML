@@ -318,15 +318,22 @@ body {
 
     .products {
         padding-top: 32px;
-        gap: 64px;
+        gap: 0;
     }
 
     .products-title {
         gap: 3px;
+        padding-bottom: 64px;
     }
 
     .products-items {
         grid-template-columns: repeat(1, 328px);
         gap: 16px;
     }
+
+    .products-button {
+        padding-top: 40px;
+    }
+
+    /* следующий блок черный отступ top должен быть 36 */
 }
