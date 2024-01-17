@@ -282,5 +282,38 @@ body {
 }
 
 @media (max-width: 375px) {
+    .center {
+        padding-left: calc(50% - 343px / 2);
+        padding-right: calc(50% - 343px / 2);
+    }
 
+    .hero {
+        height: 100vh;
+        padding-left: 56px;
+    }
+
+    .svg {
+        display: none;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-text-head {
+        font-size: 38px;
+    }
+    
+    .hero-text-midle {
+        font-size: 20px;
+    }
+
+    .proposals {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .products-items {
+        grid-template-columns: repeat(1, 360px);
+        gap: 16px;
+    }
 }
