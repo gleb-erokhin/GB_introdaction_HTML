@@ -249,6 +249,48 @@ body {
     font-weight: 300;
 }
 
+/* блок subscrybe */
+.subscrybe {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: calc(50% - 1600px / 2);
+    padding-right: calc(50% - 1600px / 2);
+    min-height: 448px;
+}
+
+.subscrybe-img {}
+
+.subscrybe-comment {
+    padding-top: 97px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subscrybe-paragraf {
+    max-width: 360px;
+}
+
+.subscrybe-form-text {
+    color: #222224;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.subscrybe-comment-span {
+    color: #222224;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
 .none {
     display: none;
 }
