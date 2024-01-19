@@ -247,16 +247,23 @@ body {
     font-family: 'Lato';
     font-size: 13.972px;
     font-weight: 300;
+    max-width: 82%;
 }
 
 /* блок subscrybe */
 .subscrybe {
+    background-image: url(../img/subs.png);
+    background-color: rgba(244, 244, 244, 0.70);
+    background-blend-mode: overlay;
+    background-size: cover;
+    min-height: 448px;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
-    min-height: 448px;
 }
 
 .subscrybe-img {}
@@ -270,7 +277,18 @@ body {
 }
 
 .subscrybe-paragraf {
+    color: #222224;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20px;
     max-width: 360px;
+}
+
+.subscrybe-comment-span {
+    color: #222224;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: italic;
 }
 
 .subscrybe-form-text {
@@ -282,14 +300,12 @@ body {
     line-height: 1.6;
 }
 
-.subscrybe-comment-span {
+.subscrybe-form-paragraf {
     color: #222224;
     font-family: 'Lato';
     font-size: 18px;
-    font-weight: 400;
     line-height: 1.6;
 }
-
 
 .none {
     display: none;
