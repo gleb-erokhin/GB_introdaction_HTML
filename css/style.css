@@ -219,8 +219,7 @@ body {
     padding-left: calc(50% - 1600px / 2);
     padding-right: calc(50% - 1600px / 2);
 
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
+    display: flex;
     justify-content: center;
     gap: 30px;
 }
@@ -233,6 +232,7 @@ body {
     gap: 17px;
     padding-top: 104px;
     padding-bottom: 104px;
+    max-width: 360px;
 }
 
 .option-head {
@@ -259,9 +259,8 @@ body {
     min-height: 448px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 327px;
 }
 
 .subscrybe-comment {
@@ -353,12 +352,25 @@ body {
 
 .social {
     display: flex;
+    gap: 7px;
 }
 
 .social-item {
     width: 32px;
     height: 32px;
     background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item:hover {
+    background-color: #F16D7F;
+}
+
+.social-item:hover svg path {
+    fill: #fff;
 }
 
 .none {
