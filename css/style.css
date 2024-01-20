@@ -3,7 +3,6 @@
     margin: 0;
 }
 
-
 body {
     font-style: normal;
     line-height: normal;
@@ -171,13 +170,8 @@ body {
 
 .products-items {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(auto-fill, 360px);
     gap: 24px;
-}
-
-.products-item {
-    display: flex;
-    flex-direction: column;
 }
 
 .products-item-block {
@@ -207,6 +201,7 @@ body {
     font-size: 16px;
 }
 
+/* кнопка для всех товаров */
 .products-button {
     display: flex;
     justify-content: center;
