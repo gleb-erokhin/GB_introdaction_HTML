@@ -33,10 +33,26 @@ body {
     align-items: flex-end;
 }
 
+.logo:hover svg path {
+    fill: #F16D7F;
+}
+
 .user-buttons {
     display: flex;
     gap: 31px;
     align-items: flex-end;
+}
+
+.menu:hover path {
+    fill: #F16D7F;
+}
+
+.profile:hover path {
+    fill: #F16D7F;
+}
+
+.store:hover path {
+    fill: #F16D7F;
 }
 
 /* Главный блок */
