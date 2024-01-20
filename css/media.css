@@ -80,7 +80,7 @@
         flex-direction: column;
         justify-content: unset;
         gap: 48px;
-        
+
         padding-top: 64px;
         padding-bottom: 140px;  
     }
@@ -140,6 +140,10 @@
     .products-title {
         gap: 3px;
         padding-bottom: 64px;
+    }
+
+    .products-title-text {
+        text-align: center;
     }
 
     .products-items {
