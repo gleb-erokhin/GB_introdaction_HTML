@@ -259,17 +259,12 @@ body {
     min-height: 448px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
-    padding-left: calc(50% - 1600px / 2);
-    padding-right: calc(50% - 1600px / 2);
+    gap: 327px;
 }
 
-.subscrybe-img {}
-
 .subscrybe-comment {
-    padding-top: 97px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,6 +300,38 @@ body {
     font-family: 'Lato';
     font-size: 18px;
     line-height: 1.6;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.forms input {
+    padding: 16px 22px;
+    color: #222224;
+    font-family: 'Lato';
+    font-size: 14px;
+
+    outline: none;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: #E1E1E1;
+}
+
+.forms button {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 14px;
+
+    padding: 16px 22px;
+    background-color: #F16D7F;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .none {
