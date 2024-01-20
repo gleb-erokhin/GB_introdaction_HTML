@@ -334,6 +334,33 @@ body {
     border-bottom-right-radius: 50px;
 }
 
+/* блок footer */
+
+.footer {
+    min-height: 79px;
+    background-color: #222224;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    color: #FBFBFB;
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+}
+
+.social-item {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+}
+
 .none {
     display: none;
 }
