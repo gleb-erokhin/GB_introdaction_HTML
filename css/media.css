@@ -1,4 +1,3 @@
-
 @media (max-width: 1024px) {
     .logo {
         padding-left: 20px;
@@ -21,7 +20,7 @@
     .hero-text-head {
         font-size: 44px;
     }
-    
+
     .hero-text-midle {
         font-size: 24px;
     }
@@ -50,7 +49,7 @@
     .hero-text-head {
         font-size: 44px;
     }
-    
+
     .hero-text-midle {
         font-size: 24px;
     }
@@ -82,9 +81,13 @@
         gap: 48px;
 
         padding-top: 64px;
-        padding-bottom: 140px;  
+        padding-bottom: 140px;
     }
 
+}
+
+@media (max-width: 425px) {
+    
 }
 
 @media (max-width: 375px) {
@@ -109,7 +112,7 @@
     .hero-text-head {
         font-size: 38px;
     }
-    
+
     .hero-text-midle {
         font-size: 20px;
     }
