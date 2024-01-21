@@ -403,6 +403,11 @@ body {
     border: none;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    transition: all 0.5s ease-in;
+}
+
+.forms:hover button {
+    transform: scale(1.1);
 }
 
 /* блок footer */
