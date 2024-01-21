@@ -191,6 +191,7 @@ body {
 
 .products-img:hover {
     background-color: rgba(58, 56, 56, 0.86);
+    transition: all 0.5s ease-in;
 }
 
 /* темный фон, карточка add button */
@@ -216,7 +217,7 @@ body {
     align-items: center;
     gap: 10px;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
     display: none;
 }
 
