@@ -3,20 +3,19 @@
     margin: 0;
 }
 
-
 body {
     font-style: normal;
     line-height: normal;
     font-weight: 400;
+    font-family: 'Lato';
+    font-size: 14px;
 }
-
 
 /* Общее центрирование */
 .center {
     padding-left: calc(50% - 1140px / 2);
     padding-right: calc(50% - 1140px / 2);
 }
-
 
 /* шапка сайта */
 .main-header {
@@ -63,14 +62,14 @@ body {
 
 .hero-text-head {
     color: #222;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 48px;
     font-weight: 900;
 }
 
 .hero-text-midle {
     color: #222;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 32px;
     font-weight: 700;
 }
@@ -80,7 +79,6 @@ body {
 }
 
 /* Блок предложения и скидки */
-
 .proposals {
     display: grid;
     gap: 30px;
@@ -102,6 +100,7 @@ body {
     position: relative;
     z-index: -1;
     width: 100%;
+
 }
 
 .proposals-item-big {
@@ -113,14 +112,14 @@ body {
     position: absolute;
     color: #FFF;
     text-align: center;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .proposal-item-red {
     color: #F16D7F;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 24px;
     font-weight: 700;
 }
@@ -129,9 +128,17 @@ body {
 .products {
     padding-top: 48px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 49px;
+}
+
+.products-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-item img {
+    width: 100%;
 }
 
 .products-title {
@@ -143,25 +150,20 @@ body {
 
 .products-title-head {
     color: #222;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 30px;
 }
 
 .products-title-text {
     color: #9F9F9F;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 14px;
 }
 
 .products-items {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: repeat(auto-fill, 360px);
     gap: 24px;
-}
-
-.products-item {
-    display: flex;
-    flex-direction: column;
 }
 
 .products-item-block {
@@ -174,43 +176,41 @@ body {
 
 .products-item-head {
     color: #000;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 13px;
 }
 
 .products-item-paragraf {
     color: #5D5D5D;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 14px;
     font-weight: 300;
 }
 
 .products-item-price {
     color: #F16D7F;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 16px;
 }
 
+/* кнопка для всех товаров */
 .products-button {
     display: flex;
     justify-content: center;
 }
 
 .products-button-style {
-    /* width: 212px;
-    height: 48px; */
     border: 1px solid #FF6A6A;
     background: #FFF;
     display: block;
 
     color: #F26376;
-    font-family: Lato;
+    font-family: 'Lato';
     font-size: 16px;
     padding: 15px 39px;
     margin-bottom: 60px;
 }
 
-/* следующий блок черный отступ top должен быть 36 */
 /* блок options */
 .options {
     margin-top: 36px;
@@ -308,7 +308,7 @@ body {
 }
 
 .forms input {
-    padding: 16px 22px;
+    padding: 16px 22px 16px 20px;
     color: #222224;
     font-family: 'Lato';
     font-size: 14px;
@@ -342,6 +342,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .footer-copy {
@@ -363,14 +364,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.social-item:hover {
-    background-color: #F16D7F;
-}
-
-.social-item:hover svg path {
-    fill: #fff;
 }
 
 .none {
