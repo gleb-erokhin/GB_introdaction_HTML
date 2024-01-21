@@ -110,13 +110,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    transition: transform 1s ease-in-out;
 }
 
 .proposals-item-img {
     position: relative;
     z-index: -1;
     width: 100%;
+}
 
+.proposals-item:hover {
+    transform: translateY(-1.1%);
 }
 
 .proposals-item-big {
@@ -411,7 +415,6 @@ body {
 }
 
 /* блок footer */
-
 .footer {
     min-height: 79px;
     background-color: #222224;
@@ -419,7 +422,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer-copy {
