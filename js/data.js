@@ -1,4 +1,4 @@
-[
+const cardsData = `[
     {
         "title": "ELLERY X M'&nbsp;O CAPSULE",
         "info": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi",
@@ -35,4 +35,4 @@
         "price": 18.00,
         "img": "/img/item6.jpg"
     }
-]
+]`
