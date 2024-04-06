@@ -29,15 +29,13 @@ cards.forEach(element => {
             </div>
             <div class="products-item-block">
                 <h3 class="products-item-head">
-                    ELLERY X M'O CAPSULE
+                    ${element.title}
                 </h3>
                 <p class="products-item-paragraf">
-                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
-                    Ellery teams up with Moda
-                    Operandi.
+                    ${element.info}
                 </p>
                 <p class="products-item-price">
-                    $52.00
+                    $${element.price}
                 </p>
             </div>
         </div>
