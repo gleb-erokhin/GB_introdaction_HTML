@@ -1,16 +1,16 @@
-// получаем данные из файла JSON
-const cards = JSON.parse(cardsData);
+const randomId = () => {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}
 
-// создаем переменную с поиском класса в который будем добавлять карточки
-const productsItems = document.querySelector('.products-items');
-console.log(productsItems);
+const priceWithoutSpaces = (str) =>{
+    return str.replace(/\s/g, '');
+}
 
-cards.forEach(element => {
-    productsItems.insertAdjacentHTML('beforeend',
-    `
-        <div class="products-item" data-id="S{id}">
-            <div class="products-img">
-                <img src="${element.img}" class="products-card-img" alt="товары">
+const generateCartProduct = (title, info, price, img, id) => {
+    return `
+        <div class="products-item">
+            <div class="products-img" data-id="${id}>
+                <img src="${img}" class="products-card-img" alt="товары">
                 <a class="products-card-button" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25"
                         fill="none">
@@ -29,16 +29,15 @@ cards.forEach(element => {
             </div>
             <div class="products-item-block">
                 <h3 class="products-item-head">
-                    ${element.title}
+                    ${title}
                 </h3>
                 <p class="products-item-paragraf">
-                    ${element.info}
+                    ${info}
                 </p>
                 <p class="products-item-price">
-                    $${element.price}
+                   $ ${price}
                 </p>
             </div>
         </div>
     `
-)
-});
+}
