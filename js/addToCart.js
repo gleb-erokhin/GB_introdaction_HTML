@@ -2,8 +2,33 @@
 const cart = document.querySelector('.cart');
 // ищем все кнопки на странице с товарами
 const addToCartBtn = document.querySelectorAll('.products-card-button');
+
 // парсим файл с данными для карточек, откуда будем брать данные для корзины
 const userData = JSON.parse(cardsData);
+
+// закрыть карточку
+// отслеживаем нажатие на саму карточку
+cart.addEventListener('click', (e) => {
+    console.log(e);
+    // после нажатия ищем родительский блок кнопки для закрытия карточки (так как их может быть не одна)
+    const info = document.querySelectorAll('.info');
+    console.log(info);
+    // пробегаемся по ним и ищем последний дочерний объект кнопка закрытия
+    info.forEach(el => {
+        console.log(el.lastElementChild);
+        // если это действительно кнопка close
+        if (el.lastElementChild.className === 'close') {
+            console.log('del');
+            // удалаяем карточку
+            const card = document.querySelector('.card');
+            card.remove();
+        }
+    })
+})
+
+const deleteCard = (productParent) => {
+    productParent.remove();
+}
 
 // пробегаемся по всем кнопкам
 addToCartBtn.forEach((element, index) => {
@@ -34,3 +59,4 @@ addToCartBtn.forEach((element, index) => {
         `)
     })
 })
+
