@@ -5,13 +5,14 @@ const cards = JSON.parse(cardsData);
 const productsItems = document.querySelector('.products-items');
 console.log(productsItems);
 
+// вставляем карточки с данными из JSON
 cards.forEach(element => {
     productsItems.insertAdjacentHTML('beforeend',
     `
-        <div class="products-item" data-id="S{id}">
+        <div class="products-item">
             <div class="products-img">
                 <img src="${element.img}" class="products-card-img" alt="товары">
-                <a class="products-card-button" href="#">
+                <a class="products-card-button cursor" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25"
                         fill="none">
                         <path

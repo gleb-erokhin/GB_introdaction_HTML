@@ -12,18 +12,27 @@ body {
     font-size: 22px;
 }
 
-.wrapper {
+.cursor {
+    cursor: pointer;
+}
+
+.cart {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
-    padding: 50px;
 }
 
 .card {
     display: flex;
     max-width: 652px;
+    max-height: 312px;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
     position: relative;
+}
+
+.card_img {
+    object-fit: contain;
 }
 
 .info {
@@ -39,7 +48,8 @@ body {
 .card__content {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 30px;
+    width: 200px;
 }
 
 .card__item {

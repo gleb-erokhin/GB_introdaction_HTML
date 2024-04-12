@@ -1,37 +1,25 @@
+// ищем блок страницы куда будут вставляться выбранные товары
 const cart = document.querySelector('.cart');
+// ищем все кнопки на странице с товарами
 const addToCartBtn = document.querySelectorAll('.products-card-button');
+// парсим файл с данными для карточек, откуда будем брать данные для корзины
 const userData = JSON.parse(cardsData);
-console.log(userData);
 
-// addToCartBtn.forEach(el => {
-//     el.closest('.products-item').setAttribute('data-id', randomId());
-//     el.addEventListener('click', (e) =>{
-//         let self = e.currentTarget;
-//         let parent = self.closest('.products-item');
-//         let id = parent.dataset.id;
-//         let img = parent.querySelector('.products-img img').getAttribute('src');
-//         console.log(img);
-//         let title = parent.querySelector('.products-item-head').textContent;
-//         console.log(title);
-//         let info = parent.querySelector('.products-item-paragraf').textContent;
-
-//         let price = parseInt(priceWithoutSpaces(parent.querySelector('.products-item-price').textContent));
-// console.log(price);
-//         cart.insertAdjacentHTML('afterbegin', generateCartProduct(title, info, price, img, id));
-//     })
-// })
-
+// пробегаемся по всем кнопкам
 addToCartBtn.forEach((element, index) => {
     console.log(element);
+    // каждому элементу создаем событие по клику
     element.addEventListener("click", () => {
+        // обавляем отступы когда будут карточки и чтобы ничего не было на сайте если в корзину ничего не выбрано
+        cart.style.padding = "50px";
         cart.insertAdjacentHTML('beforeend', `
         <div class="card">
-            <img src="${userData[index].img}" alt="${userData[index].title}">
+            <img class="products-card-img card_img" src="${userData[index].img}" alt="${userData[index].title}">
             <div class="info">
                 <h2 class="card__title">${userData[index].title}</h2>
                 <div class="card__content">
+                    <p class="products-item-paragraf">${userData[index].info}</p>
                     <p class="card__item">Price: <span class="color">$${userData[index].price}</span> </p>
-                    <p class="card__info">${userData[index].info}</p>
                 </div>
                 <button class="close">
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
