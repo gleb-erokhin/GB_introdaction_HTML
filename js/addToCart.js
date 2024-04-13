@@ -8,23 +8,31 @@ const userData = JSON.parse(cardsData);
 
 // закрыть карточку
 // отслеживаем нажатие на саму карточку
+// cart.addEventListener('click', (e) => {
+//     console.log(e);
+//     // после нажатия ищем родительский блок кнопки для закрытия карточки (так как их может быть не одна)
+//     const info = document.querySelectorAll('.info');
+//     console.log(info);
+//     // пробегаемся по ним и ищем последний дочерний объект кнопка закрытия
+//     info.forEach((el, index) => {
+//         console.log(el.lastElementChild);
+//         // если это действительно кнопка close
+//         if (el.lastElementChild.className === 'close') {
+//             console.log('del');
+//             // удалаяем карточку
+//             const card = document.querySelector('.card');
+//             card.remove(index);
+    
+//         }
+//     })
+// })
+
 cart.addEventListener('click', (e) => {
-    console.log(e);
-    // после нажатия ищем родительский блок кнопки для закрытия карточки (так как их может быть не одна)
-    const info = document.querySelectorAll('.info');
-    console.log(info);
-    // пробегаемся по ним и ищем последний дочерний объект кнопка закрытия
-    info.forEach(el => {
-        console.log(el.lastElementChild);
-        // если это действительно кнопка close
-        if (el.lastElementChild.className === 'close') {
-            console.log('del');
-            // удалаяем карточку
-            const card = document.querySelector('.card');
-            card.remove();
-        }
-    })
+    if (e.target) {
+        
+    }
 })
+
 
 const deleteCard = (productParent) => {
     productParent.remove();
