@@ -1,6 +1,10 @@
 // получаем данные из файла JSON
 const cards = JSON.parse(cardsData);
 
+const randomId = () => {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}
+
 // создаем переменную с поиском класса в который будем добавлять карточки
 const productsItems = document.querySelector('.products-items');
 console.log(productsItems);
@@ -9,7 +13,7 @@ console.log(productsItems);
 cards.forEach(element => {
     productsItems.insertAdjacentHTML('beforeend',
     `
-        <div class="products-item">
+        <div class="products-item" data-id="${element.id}">
             <div class="products-img">
                 <img src="${element.img}" class="products-card-img" alt="товары">
                 <a class="products-card-button cursor" >

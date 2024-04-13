@@ -8,29 +8,23 @@ const userData = JSON.parse(cardsData);
 
 // закрыть карточку
 // отслеживаем нажатие на саму карточку
-// cart.addEventListener('click', (e) => {
-//     console.log(e);
-//     // после нажатия ищем родительский блок кнопки для закрытия карточки (так как их может быть не одна)
-//     const info = document.querySelectorAll('.info');
-//     console.log(info);
-//     // пробегаемся по ним и ищем последний дочерний объект кнопка закрытия
-//     info.forEach((el, index) => {
-//         console.log(el.lastElementChild);
-//         // если это действительно кнопка close
-//         if (el.lastElementChild.className === 'close') {
-//             console.log('del');
-//             // удалаяем карточку
-//             const card = document.querySelector('.card');
-//             card.remove(index);
-    
-//         }
-//     })
-// })
-
 cart.addEventListener('click', (e) => {
-    if (e.target) {
-        
-    }
+    let self = e.currentTarget;
+
+    console.log(self);
+    console.log(parent);
+
+    // const info = document.querySelectorAll('.close');
+    // console.log(info);
+    // info.forEach(el => {
+    //     console.log(el);
+        // if (el.lastElementChild.className === 'close') {
+        //     console.log('del');
+        //     const card = document.querySelector('.card');
+        //     card.remove();
+    
+        // }
+    // })
 })
 
 
@@ -46,7 +40,7 @@ addToCartBtn.forEach((element, index) => {
         // обавляем отступы когда будут карточки и чтобы ничего не было на сайте если в корзину ничего не выбрано
         cart.style.padding = "50px";
         cart.insertAdjacentHTML('beforeend', `
-        <div class="card">
+        <div class="card" data-id="${userData[index].id}">
             <img class="products-card-img card_img" src="${userData[index].img}" alt="${userData[index].title}">
             <div class="info">
                 <h2 class="card__title">${userData[index].title}</h2>
