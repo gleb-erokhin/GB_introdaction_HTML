@@ -72,6 +72,11 @@ body {
     cursor: pointer;
     top: 28px;
     right: 22px;
+
+    background: url(../img/xmark-solid.svg) 50% 50% no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
 }
 
 input {
