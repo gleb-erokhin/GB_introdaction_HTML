@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -29,6 +30,15 @@ body {
     max-height: 312px;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
     position: relative;
+
+}
+
+.card:first-child {
+    margin-top: 50px;
+}
+
+.card:last-child {
+    margin-bottom: 50px;
 }
 
 .card_img {
